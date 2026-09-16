@@ -1,12 +1,28 @@
-This repository contains the data and scripts necessary to reproduce all analyses for:
+This repository contains the scripts necessary to reproduce all analyses for:
 
 Paper title and authors
 
 Preprint here: Link
 
-To reproduce analyses, an additional folder "data" has to be downloaded from Zenodo (LINK), and placed into the same working directory as the remaining folders.
+To reproduce analyses, an additional folder "data" has to be downloaded from Zenodo (doi.org/10.5281/zenodo.22798712), and placed into the same working directory as the remaining folders.
 
-Software requirements
+Your working directory should contain the following folders to reproduce the analysis:
+
+```
+└── Fish_foragers/
+    ├── 0_descriptive-analysis/
+    ├── 1_step_selection/
+    ├── 2_ecological_validation_step_selection/
+    ├── 3_spot_leaving/
+    ├── 4_ecological_validation_spot_leaving/
+    ├── 5_angler_effects/
+    ├── 6_recovery/
+    ├── 7_revisit_analysis/
+    ├── data/
+    └── functions/
+```
+
+#Software requirements
 
 The analysis code was written in R (v4.5.1.) Statistical models are fit using the Stan MCMC engine (v2.32.2) and cmdstanr (v0.9.0.9000) packages, which require a C++ compiler. 
 Installation instructions are available at https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started and https://mc-stan.org/cmdstanr/articles/cmdstanr.html. 

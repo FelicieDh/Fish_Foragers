@@ -10,7 +10,7 @@ Your working directory should contain the following folders to reproduce the ana
 
 ```
 └── Fish_foragers/
-    ├── 0_descriptive-analysis/
+    ├── 0_descriptive_analysis/
     ├── 1_step_selection/
     ├── 2_ecological_validation_step_selection/
     ├── 3_spot_leaving/
@@ -22,7 +22,7 @@ Your working directory should contain the following folders to reproduce the ana
     └── functions/
 ```
 
-#Software requirements
+# Software requirements
 
 The analysis code was written in R (v4.5.1.) Statistical models are fit using the Stan MCMC engine (v2.32.2) and cmdstanr (v0.9.0.9000) packages, which require a C++ compiler. 
 Installation instructions are available at https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started and https://mc-stan.org/cmdstanr/articles/cmdstanr.html. 

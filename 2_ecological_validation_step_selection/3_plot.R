@@ -212,9 +212,9 @@ xlim <- range(sapply(densities, function(d) range(d$x)))
 
 
 
-# ####
+####
 # #png(here::here("figures","Fig2_step_selection.png"), res=300, units="in", width=7.5, height=5.5)
-# svg(here::here("figures","Fig2_step_selection.svg"), width=7.5, height=5.5, bg="transparent", pointsize = 12)
+# svg(here::here("figures","Fig2_step_selection2.svg"), width=7.5, height=5.5, bg="transparent", pointsize = 12)
 # 
 # layout(matrix(c(1, 3, 2, 4),
 #               nrow = 2,
@@ -222,7 +222,8 @@ xlim <- range(sapply(densities, function(d) range(d$x)))
 # 
 # par(mar=c(5,5,2,1), oma=c(0,0,0,0))
 # 
-# plotfunc(params, beta_std, 3:1, "Standardized posterior estimate\nof the spot selection model","#0097A7", c("Loss","Success","Social"), xlim=c(-2,2.5), cex=0.6, beta_sd = beta_sd_ss)#"Sonar",
+# plotfunc(params, beta_std, 3:1, "Standardized posterior estimate\nof the spot selection model","#0097A7", 
+#          c("Loss","Success","Social"), xlim=c(-2,2.5), ylim=c(0,3), cex=cex, beta_sd = beta_sd_ss)#"Sonar",
 # text(2.4,3.4,"A", font=2)
 # mtext("Spatial features", 3,  line=0.6, cex=.7, font=2)
 # 
@@ -239,21 +240,21 @@ xlim <- range(sapply(densities, function(d) range(d$x)))
 #   d <- densities[[i]]
 #   ci <- cis[[i]]
 #   ci2 <- cis2[[i]]
-#   
+# 
 #   # Scale density height
 #   y <- d$y / max(d$y) * 0.35 + y_pos[i]
-#   
+# 
 #   # Density line
 #   lines(d$x, y, col = colors[i], lwd = 1)
 #   lines(c(min(d$x), max(d$x)), y[1:2], col = colors[i], lwd = 1)
 #   lines(c(ci[1], ci[2]), y[1:2], col = colors[i], lwd = 5, lend=1)
 #   #lines(c(ci2[1], ci2[2]), y[1:2], col = colors[i], lwd = 6, lend=1)
-#   
+# 
 #   points(medians[[i]], y_pos[i], pch=19, col=colors[i], cex=1.6)
 #   # CI shading
 #   idx <- d$x >= ci[1] & d$x <= ci[2]
 #   idx2 <- d$x >= ci2[1] & d$x <= ci2[2]
-#   
+# 
 #   polygon(
 #     c(d$x, rev(d$x)),
 #     c(y, rep(y_pos[i], length(d$x))),
@@ -318,7 +319,7 @@ xlim <- range(sapply(densities, function(d) range(d$x)))
 # text(35,.95,"D", font=2)
 # 
 # dev.off()
-# # layout(1)
+# layout(1)
 
 
 ################################################################################

@@ -97,7 +97,9 @@ cex<-1
 
 xlim <- range(sapply(densities, function(d) range(d$x)))
 
-# png(here::here("figures","supp", "Fig_revisit_catch.png"), units="in", res=300, width=4.5, height=4.5)
+# svg(here::here("figures","Extended data", "ED8.svg"), width=5, height=4.5,
+#     pointsize = 12,
+#     bg = "transparent")
 # par(mar=c(5,8,1,1))
 # plot(NA,
 #      xlim = xlim,
@@ -111,21 +113,21 @@ xlim <- range(sapply(densities, function(d) range(d$x)))
 #   d <- densities[[i]]
 #   ci <- cis[[i]]
 #   ci2 <- cis2[[i]]
-#   
+# 
 #   # Scale density height
 #   y <- d$y / max(d$y) * 0.35 + y_pos[i]
-#   
+# 
 #   # Density line
 #   lines(d$x, y, col = colors[i], lwd = 1)
 #   lines(c(min(d$x), max(d$x)), y[1:2], col = colors[i], lwd = 1)
 #   lines(c(ci[1], ci[2]), y[1:2], col = colors[i], lwd = 5, lend=1)
 #   #lines(c(ci2[1], ci2[2]), y[1:2], col = colors[i], lwd = 6, lend=1)
-#   
+# 
 #   points(medians[[i]], y_pos[i], pch=19, col=colors[i], cex=1.6)
 #   # CI shading
 #   idx <- d$x >= ci[1] & d$x <= ci[2]
 #   idx2 <- d$x >= ci2[1] & d$x <= ci2[2]
-#   
+# 
 #   polygon(
 #     c(d$x, rev(d$x)),
 #     c(y, rep(y_pos[i], length(d$x))),

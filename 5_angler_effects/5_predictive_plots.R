@@ -213,9 +213,9 @@ upper_catch <- apply(epred_catch, 2, quantile, probs = 0.975)
 # mtext("Time (minutes)",1,2)
 # polygon(c(counter_seq, rev(counter_seq)),
 #         c(upper_catch, rev(lower_catch)),
-#         col = scales::alpha("#0097A7", 0.2), border = NA)
+#         col = scales::alpha("magenta3", 0.2), border = NA)
 # 
-# lines(counter_seq, med_catch, col = "#0097A7", lwd = 2)
+# lines(counter_seq, med_catch, col = "magenta3", lwd = 2)
 # text(30,0.39,"B", font=2)
 # 
 # 

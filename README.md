@@ -2,7 +2,7 @@
 
 This repository contains the scripts necessary to reproduce all analyses for:
 
-Dhellemmes F., Schakowski A., Chirkov V., Kavelaars M.M., Korzilius F.F.A., Deffner D., Romanczuk P., Kortet R., Pihlasvaara P., Kurvers R.H.J.M.
+Dhellemmes F., Schakowski A., Chirkov V., Kavelaars M.M., Korzilius F.F.A., Deffner D., Romanczuk P., Kortet R., Pihlasvaara P., Kurvers R.H.J.M. (Preprint 2026)
 Tracking human foragers and their prey reveals adaptive predator–prey dynamics
 
 Preprint here: Link

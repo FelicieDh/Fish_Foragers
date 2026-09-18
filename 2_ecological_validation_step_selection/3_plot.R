@@ -212,9 +212,8 @@ xlim <- range(sapply(densities, function(d) range(d$x)))
 
 
 
-####
-# #png(here::here("figures","Fig2_step_selection.png"), res=300, units="in", width=7.5, height=5.5)
-# svg(here::here("figures","Fig2_step_selection2.svg"), width=7.5, height=5.5, bg="transparent", pointsize = 12)
+# ###
+# svg(here::here("figures","Fig2_step_selection.svg"), width=7.5, height=5.5, bg="transparent", pointsize = 12)
 # 
 # layout(matrix(c(1, 3, 2, 4),
 #               nrow = 2,
@@ -222,7 +221,7 @@ xlim <- range(sapply(densities, function(d) range(d$x)))
 # 
 # par(mar=c(5,5,2,1), oma=c(0,0,0,0))
 # 
-# plotfunc(params, beta_std, 3:1, "Standardized posterior estimate\nof the spot selection model","#0097A7", 
+# plotfunc(params, beta_std, 3:1, "Standardized posterior estimate\nof the spot selection model","#0097A7",
 #          c("Loss","Success","Social"), xlim=c(-2,2.5), ylim=c(0,3), cex=cex, beta_sd = beta_sd_ss)#"Sonar",
 # text(2.4,3.4,"A", font=2)
 # mtext("Spatial features", 3,  line=0.6, cex=.7, font=2)

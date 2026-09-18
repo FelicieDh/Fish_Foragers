@@ -132,7 +132,6 @@ full_effects_std<-as.data.frame(full_effects_std)
 
 
 
-# #png(here::here("figures","Fig3_spot_leaving_figure_rev.png"), res=300, units="in", width=8, height=4)
 # svg(here::here("figures","Fig3_spot_leaving_figure.svg"), width = 180 / 25.4,
 #     height = 100 / 25.4, bg="transparent", pointsize=12)
 # 
@@ -213,8 +212,8 @@ full_effects_std<-as.data.frame(full_effects_std)
 #   text(0.5,6.4,"B", font=2)
 # 
 #   dev.off()
-#   
-#   
+# 
+
   ################################################################################
   ################################################################################
   ################################################################################

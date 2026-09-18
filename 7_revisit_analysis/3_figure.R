@@ -179,7 +179,7 @@ text(cluster_centres$E_utm[1:nrow(unique(data[compIDwatch==unique(data$compIDwat
 # 
 # layout(
 #   matrix(c(1, 2, 3,
-#            
+# 
 # 
 #            4, 5, 6), ncol = 3, byrow = TRUE),
 #   widths  = c(1.5,2,2),
@@ -197,12 +197,12 @@ text(cluster_centres$E_utm[1:nrow(unique(data[compIDwatch==unique(data$compIDwat
 #      ylim = c(0, 0.8), xlim = c(-0.5, 1.5),
 #      pch = 19, cex = 1.5, xaxt = "n",
 #      xlab = "",
-#      ylab = "Predicted probability to revisit cluster",
+#      ylab = "Predicted probability of revisit",
 #      #,main = "Posterior predicted probability by success"
 #      col=c(scales::alpha("#0097A7",1), scales::alpha("magenta3",1)), las=1 )
 # mtext("Was spot successful ?", 1, 2.1, cex=.7)
 # axis(1, at = c(0, 1), labels = c("No", "Yes"))
-# mtext("Probability of future revisits \n given current success", 3, .6, cex=.7, font = 2)
+# #mtext("Probability of future revisits \n given current success", 3, .6, cex=.7, font = 2)
 # 
 # arrows(x, p_lo_state, x, p_hi_state,
 #        angle = 90, code = 3, length = 0.05, lwd = 2,col=c(scales::alpha("#0097A7",1), scales::alpha("magenta3",1)))
@@ -227,10 +227,10 @@ text(cluster_centres$E_utm[1:nrow(unique(data[compIDwatch==unique(data$compIDwat
 # plot(nd_fish$fish_stop, p_mean_fish,
 #      type = "l", lwd = 2,
 #      ylim = c(0, .8),
-#      xlab = "Fish presence when leaving \n the spot", ylab = "Predicted probability to revisit cluster",
+#      xlab = "Fish presence when leaving \n the spot", ylab = "Predicted probability of revisit",
 #      col=scales::alpha("#0097A7",1), las=1)
 # 
-# mtext("Probability of future revisits \n given fish presence", 3, .6, cex=.7, font = 2)
+# #mtext("Probability of future revisits \n given fish presence", 3, .6, cex=.7, font = 2)
 # 
 # polygon(c(nd_fish$fish_stop, rev(nd_fish$fish_stop)),
 #         c(p_lo_fish, rev(p_hi_fish)),
@@ -268,7 +268,7 @@ text(cluster_centres$E_utm[1:nrow(unique(data[compIDwatch==unique(data$compIDwat
 #      col=c(scales::alpha("#0097A7",1), scales::alpha("magenta3",1)), las=1)
 # mtext("Was spot successful ?", 1, 2.1, cex=.7)
 # axis(1, at = c(0, 1), labels = c("No", "Yes"))
-# mtext("Probability of the next spot being \n a revisit given current success", 3, .6, cex=.7, font = 2)
+# #mtext("Probability of the next spot being \n a revisit given current success", 3, .6, cex=.7, font = 2)
 # 
 # 
 # arrows(x_prev_success, p_lo_prev_success, x_prev_success, p_hi_prev_success,
@@ -296,7 +296,7 @@ text(cluster_centres$E_utm[1:nrow(unique(data[compIDwatch==unique(data$compIDwat
 #      xlab = "Fish presence when leaving \n the spot", ylab = "Predicted probability of next spot choice \n being a revisit",
 #      col=scales::alpha("darkgrey",1), las=1)
 # #main = "Posterior predicted probability by fish stop")
-# mtext("Probability of next spot being \n a revisit given fish presence", 3, .6, cex=.7, font = 2)
+# #mtext("Probability of next spot being \n a revisit given fish presence", 3, .6, cex=.7, font = 2)
 # 
 # polygon(c(nd_prev_fish$prev_fish, rev(nd_prev_fish$prev_fish)),
 #         c(p_lo_prev_fish, rev(p_hi_prev_fish)),

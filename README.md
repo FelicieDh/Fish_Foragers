@@ -1,10 +1,10 @@
 This repository contains the scripts necessary to reproduce all analyses for:
 
-Paper title and authors
+Dhellemmes F., Schakowski A., Chirkov V., Kavelaars M.M., Korzilius F.F.A., Deffner D., Romanczuk P., Kortet R., Pihlasvaara P., Kurvers R.H.J.M. (preprint) Tracking human foragers and their prey reveals adaptive predator–prey dynamics
 
 Preprint here: Link
 
-To reproduce analyses, an additional folder "data" has to be downloaded from Zenodo (doi.org/10.5281/zenodo.22798712), and placed into the same working directory as the remaining folders.
+To reproduce analyses, an additional folder "data" has to be downloaded from Zenodo (https://doi.org/10.5281/zenodo.22798712), and placed into the same working directory as the remaining folders.
 
 Your working directory should contain the following folders to reproduce the analysis:
 

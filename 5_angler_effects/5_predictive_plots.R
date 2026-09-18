@@ -42,12 +42,12 @@ newdata_successloss<- expand_grid(data_type = c("real", "control"),
 
 
 
-loss_pred <- predicted_draws(model_loss,newdata = newdata_successloss,re_formula = ~(1|compID), # Keeps 'block', sets 'actor' to 0
-                             allow_new_levels = TRUE)
-saveRDS(loss_pred, here::here("data","5_angler_effects", "model_fit","loss_pred.RDS"))
-success_pred <- predicted_draws(model_success,newdata = newdata_successloss,re_formula = ~(1|compID), # Keeps 'block', sets 'actor' to 0
-                                allow_new_levels = TRUE)
-saveRDS(success_pred, here::here("data","5_angler_effects", "model_fit","success_pred.RDS"))
+# loss_pred <- predicted_draws(model_loss,newdata = newdata_successloss,re_formula = ~(1|compID), # Keeps 'block', sets 'actor' to 0
+#                              allow_new_levels = TRUE)
+# saveRDS(loss_pred, here::here("data","5_angler_effects", "model_fit","loss_pred.RDS"))
+# success_pred <- predicted_draws(model_success,newdata = newdata_successloss,re_formula = ~(1|compID), # Keeps 'block', sets 'actor' to 0
+#                                 allow_new_levels = TRUE)
+# saveRDS(success_pred, here::here("data","5_angler_effects", "model_fit","success_pred.RDS"))
 
 
 loss_pred<-readRDS(here::here("data","5_angler_effects", "model_fit","loss_pred.RDS"))
@@ -120,7 +120,7 @@ newdata_catch<- tidyr::expand_grid(fish_3 = seq(0,1,by=0.1),
 catch_pred <- predicted_draws(model_catch,newdata = newdata_catch, allow_new_levels = TRUE)
 
 
-saveRDS(catch_pred, here::here("data","5_angler_effects", "model_fit","success_pred.RDS"))
+#saveRDS(catch_pred, here::here("data","5_angler_effects", "model_fit","success_pred.RDS"))
 
 
 p <- posterior_epred(

@@ -354,14 +354,18 @@ display: none;
 
 <p>This repository contains the scripts necessary to reproduce all
 analyses for:</p>
-<p>Paper title and authors</p>
+<p>Dhellemmes F., Schakowski A., Chirkov V., Kavelaars M.M., Korzilius
+F.F.A., Deffner D., Romanczuk P., Kortet R., Pihlasvaara P., Kurvers
+R.H.J.M. (preprint) Tracking human foragers and their prey reveals
+adaptive predator–prey dynamics</p>
 <p>Preprint here: Link</p>
 <p>To reproduce analyses, an additional folder “data” has to be
-downloaded from Zenodo (doi.org/10.5281/zenodo.22798712), and placed
+downloaded from Zenodo (<a href="https://doi.org/10.5281/zenodo.22798712" class="uri">https://doi.org/10.5281/zenodo.22798712</a>), and placed
 into the same working directory as the remaining folders.</p>
-<p>Your folder should look like to reproduce the analysis</p>
+<p>Your working directory should contain the following folders to
+reproduce the analysis:</p>
 <pre><code>└── Fish_foragers/
-    ├── 0_descriptive-analysis/
+    ├── 0_descriptive_analysis/
     ├── 1_step_selection/
     ├── 2_ecological_validation_step_selection/
     ├── 3_spot_leaving/
@@ -371,7 +375,8 @@ into the same working directory as the remaining folders.</p>
     ├── 7_revisit_analysis/
     ├── data/
     └── functions/</code></pre>
-<p>#Software requirements</p>
+<div id="software-requirements" class="section level1">
+<h1>Software requirements</h1>
 <p>The analysis code was written in R (v4.5.1.) Statistical models are
 fit using the Stan MCMC engine (v2.32.2) and cmdstanr (v0.9.0.9000)
 packages, which require a C++ compiler. Installation instructions are
@@ -380,6 +385,7 @@ and <a href="https://mc-stan.org/cmdstanr/articles/cmdstanr.html" class="uri">ht
 also the Stan user guide at <a href="https://mc-stan.org/users/documentation" class="uri">https://mc-stan.org/users/documentation</a>.</p>
 <p>All other required R packages and their versions can be found in
 “functions/used-packages.R”</p>
+</div>
 
 
 
